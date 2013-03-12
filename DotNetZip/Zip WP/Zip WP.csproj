@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45F9448F-D6DD-4283-9741-416BA56A12C0}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ionic.Zip</RootNamespace>
+    <AssemblyName>Ionic.Zip</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonSrc\CRC32.cs">
+      <Link>CRC32.cs</Link>
+    </Compile>
+    <Compile Include="..\CommonSrc\Iso8859Dash1Encoding.cs">
+      <Link>Iso8859Dash1Encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ComHelper.cs">
+      <Link>Zip\ComHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\EncryptionAlgorithm.cs">
+      <Link>Zip\EncryptionAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\Events.cs">
+      <Link>Zip\Events.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\Exceptions.cs">
+      <Link>Zip\Exceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ExtractExistingFileAction.cs">
+      <Link>Zip\ExtractExistingFileAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\FileSelector.cs">
+      <Link>Zip\FileSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\OffsetStream.cs">
+      <Link>Zip\OffsetStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\Shared.cs">
+      <Link>Zip\Shared.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\WinZipAes.cs">
+      <Link>Zip\WinZipAes.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipConstants.cs">
+      <Link>Zip\ZipConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipCrypto.cs">
+      <Link>Zip\ZipCrypto.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipDirEntry.cs">
+      <Link>Zip\ZipDirEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipEntry.cs">
+      <Link>Zip\ZipEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipEntry.Extract.cs">
+      <Link>Zip\ZipEntry.Extract.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipEntry.Read.cs">
+      <Link>Zip\ZipEntry.Read.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipEntry.Write.cs">
+      <Link>Zip\ZipEntry.Write.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipEntrySource.cs">
+      <Link>Zip\ZipEntrySource.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipErrorAction.cs">
+      <Link>Zip\ZipErrorAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.AddUpdate.cs">
+      <Link>Zip\ZipFile.AddUpdate.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.Check.cs">
+      <Link>Zip\ZipFile.Check.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.cs">
+      <Link>Zip\ZipFile.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.Events.cs">
+      <Link>Zip\ZipFile.Events.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.Extract.cs">
+      <Link>Zip\ZipFile.Extract.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.Read.cs">
+      <Link>Zip\ZipFile.Read.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.Save.cs">
+      <Link>Zip\ZipFile.Save.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.Selector.cs">
+      <Link>Zip\ZipFile.Selector.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipFile.x-IEnumerable.cs">
+      <Link>Zip\ZipFile.x-IEnumerable.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipInputStream.cs">
+      <Link>Zip\ZipInputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipOutputStream.cs">
+      <Link>Zip\ZipOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zip\ZipSegmentedStream.cs">
+      <Link>Zip\ZipSegmentedStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\Deflate.cs">
+      <Link>Zlib\Deflate.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\DeflateStream.cs">
+      <Link>Zlib\DeflateStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\GZipStream.cs">
+      <Link>Zlib\GZipStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\Inflate.cs">
+      <Link>Zlib\Inflate.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\InfTree.cs">
+      <Link>Zlib\InfTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\ParallelDeflateOutputStream.cs">
+      <Link>Zlib\ParallelDeflateOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\Tree.cs">
+      <Link>Zlib\Tree.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\Zlib.cs">
+      <Link>Zlib\Zlib.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\ZlibBaseStream.cs">
+      <Link>Zlib\ZlibBaseStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\ZlibCodec.cs">
+      <Link>Zlib\ZlibCodec.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\ZlibConstants.cs">
+      <Link>Zlib\ZlibConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\Zlib\ZlibStream.cs">
+      <Link>Zlib\ZlibStream.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BZip2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
